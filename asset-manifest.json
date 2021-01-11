@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/code-with-sergio/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/code-with-sergio/static/js/main.4074adab.chunk.js",
+    "main.js.map": "/code-with-sergio/static/js/main.4074adab.chunk.js.map",
+    "runtime-main.js": "/code-with-sergio/static/js/runtime-main.133dc34f.js",
+    "runtime-main.js.map": "/code-with-sergio/static/js/runtime-main.133dc34f.js.map",
+    "static/js/2.b51b4391.chunk.js": "/code-with-sergio/static/js/2.b51b4391.chunk.js",
+    "static/js/2.b51b4391.chunk.js.map": "/code-with-sergio/static/js/2.b51b4391.chunk.js.map",
+    "static/js/3.c0898583.chunk.js": "/code-with-sergio/static/js/3.c0898583.chunk.js",
+    "static/js/3.c0898583.chunk.js.map": "/code-with-sergio/static/js/3.c0898583.chunk.js.map",
+    "index.html": "/code-with-sergio/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/code-with-sergio/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.b51b4391.chunk.js.LICENSE.txt": "/code-with-sergio/static/js/2.b51b4391.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/code-with-sergio/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.133dc34f.js",
+    "static/js/2.b51b4391.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.4074adab.chunk.js"
+  ]
+}
