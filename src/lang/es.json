@@ -1,0 +1,10 @@
+{
+    "navbar":{
+        "profile":"Perfil",
+        "skills":"Habilidades",
+        "experience":"Experiencia",
+        "portfolio":"Portafolio",
+        "contact":"Contacto"
+    
+    }   
+}

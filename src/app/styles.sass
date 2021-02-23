@@ -1,0 +1,40 @@
+@import '../variables'
+.app 
+  width: 100%
+  &__header
+    width: 100%
+    @include flex-center(_,center,center)
+  &__title
+    position: relative
+    width: 300px
+    bottom: 100px
+    margin: 10px 40px 10px 10px
+  &__body
+    margin-top: 60px
+    @include flex-center(column,center,center)
+  &__background
+    margin: 10px
+    height: 650px
+    
+@media (max-width: 800px)
+  .app
+    &__header
+      @include flex-center(column,center,center)
+    &__title
+      width: 100% 
+      bottom: 0
+      text-align: center
+      margin: 40px 0px 0px 0px 
+    &__background
+      margin: 10px
+      height: auto
+      width: 100%  
+.fa-arrow-alt-circle-up
+  position: fixed
+  right: 5px
+  bottom: 65px
+  font-size: 45px
+  opacity: 0.6
+  color: $color-white-blue  
+  z-index: 9999999999
+

@@ -1,13 +1,328 @@
+.app {
+  width: 100%;
+}
+.app__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: _;
+}
+.app__title {
+  position: relative;
+  width: 300px;
+  bottom: 100px;
+  margin: 10px 40px 10px 10px;
+}
+.app__body {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.app__background {
+  margin: 10px;
+  height: 650px;
+}
+
+@media (max-width: 800px) {
+  .app__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .app__title {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+  }
+  .app__background {
+    margin: 10px;
+    height: auto;
+    width: 100%;
+  }
+}
+.fa-arrow-alt-circle-up {
+  position: fixed;
+  right: 5px;
+  bottom: 65px;
+  font-size: 45px;
+  opacity: 0.6;
+  color: #53C8FA;
+  z-index: 9999999999;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  color: #53C8FA;
+  background-color: #fff;
+  font-weight: bold;
+  z-index: 99999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: _;
+  -webkit-box-shadow: 0px 15px 23px -9px #53C8FA;
+  box-shadow: 0px 15px 23px -9px #53C8FA;
+}
+.navbar__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar__logo {
+  margin: 0px 10px;
+  width: 80px;
+  height: 80px;
+}
+.navbar__list {
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: _;
+}
+.navbar__list-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: _;
+  margin: 0;
+}
+.navbar__list-li {
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+  list-style-type: none;
+  margin: 10px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #fff;
+}
+.navbar__list-li:hover {
+  transition-duration: 0.3;
+  color: #0F64C2;
+  border-bottom: 3px solid #53C8FA;
+}
+.navbar__burguer {
+  font-size: 25px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #53C8FA;
+  border-radius: 5px;
+}
+.navbar__burguer--press {
+  color: #0F64C2;
+  border-color: #0F64C2;
+}
+.navbar__burguer:hover {
+  color: #0F64C2;
+  transition-duration: 0.3s;
+  border-color: #0F64C2;
+}
+.navbar__select {
+  margin: 0px 5px;
+  border: none;
+  padding: 5px;
+  crusor: pointer;
+  font-size: 20px;
+  color: #53C8FA;
+  background-color: #fff;
+}
+.navbar__select:focus {
+  outline: none;
+}
+.navbar__dropdown {
+  display: none;
+}
+.navbar__dropdown-ul {
+  transition-duration: 0.5s;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.navbar__dropdown-row {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 40px;
+  margin: 0;
+  cursor: pointer;
+  list-style-type: none;
+  border: 1px solid #0F64C2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar__dropdown-row:hover {
+  color: #0F64C2;
+  opacity: 0.9;
+  transition-duration: 0.4s;
+}
+.navbar__dropdown-li {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar__list {
+    display: none;
+  }
+
+  .navbar__dropdown {
+    display: block;
+  }
+}
+.profile {
+  width: 85%;
+  margin: 30px 0px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  border: 5px solid #D1D4F9;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 5px 15px -2px #000000;
+}
+.profile__image {
+  position: relative;
+  bottom: 60px;
+  width: 120px;
+  border: 5px solid #D1D4F9;
+  border-radius: 50%;
+}
+.profile__description {
+  position: relative;
+  bottom: 60px;
+}
+.profile__title {
+  position: relative;
+  bottom: 60px;
+}
+
+.skills {
+  box-sizing: content-box;
+  margin-top: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border: 5px solid #D1D4F9;
+  border-radius: 20px;
+  box-shadow: 1px 5px 15px -2px #000000;
+}
+.skills__skill {
+  position: relative;
+  bottom: 50px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  border: 5px solid #D1D4F9;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.skills__title {
+  position: relative;
+  bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+.skills__back {
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skills__back-header {
+  padding: 0px 10px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #77d9ac;
+}
+.skills__back-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.skills__image-front {
+  width: 60px;
+}
+.skills__image-back {
+  position: relative;
+  right: 5px;
+  width: 40px;
+}
+.skills__image-skill {
+  width: 60px;
+}
+.skills__image-logo {
+  width: 50px;
+  margin: 8px;
+}
+
+.contact {
+  border-top: 2px solid silver;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.contact__icon {
+  margin: 10px;
+  cursor: pointer;
+  color: black;
+}
+.contact__icon:hover {
+  opacity: 0.7;
+  transition-duration: 0.3s;
+}
+.contact__git {
+  color: #242A2E;
+}
+.contact__lin {
+  color: #0D65C2;
+}
+.contact__whatsapp {
+  color: #00E776;
+}
+.contact__mail {
+  color: #EA4435;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Balsamiq Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+/*# sourceMappingURL=index.css.map */
