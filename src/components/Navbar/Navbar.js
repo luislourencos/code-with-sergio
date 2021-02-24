@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import logo from '../../img/logo.png'
 import './styles.sass';
@@ -15,6 +15,19 @@ export const Navbar = ({ items = [
 
     const { t } = useTranslation()
     const [dropDown, setDropDown] = useState(false)
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+
+    const handleScroll = useCallback(() => {
+        const currentScrollPos = window.pageYOffset;
+        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+        setPrevScrollPos(currentScrollPos);
+    }, [prevScrollPos])
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos, visible, handleScroll]);
 
     const handlerClick = (value) => {
         onClick(value)
@@ -23,7 +36,7 @@ export const Navbar = ({ items = [
 
 
     return (
-        <div className='navbar'>
+        <nav className='navbar' style={{ top: visible ? '0' : '-75px' }}>
             <img src={logo} className='navbar__logo' alt='logo' />
             <div className='navbar__nav'>
                 <select className='navbar__select' defaultValue={localStorage.getItem('language')} onChange={(e) => {
@@ -53,13 +66,12 @@ export const Navbar = ({ items = [
                                         <div className='navbar__dropdown-li'>+</div>
 
                                     </div>
-
                                 ))}
                             </div>
                         </Fade>
                     }
                 </div>
             </div>
-        </div >
+        </nav >
     );
 };

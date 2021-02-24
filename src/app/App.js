@@ -2,11 +2,17 @@ import React, { useRef, useState } from 'react';
 import { Navbar } from '../components/Navbar'
 import { Contact } from '../components/Contact'
 import { Profile } from '../components/Profile';
+
+import { Skills } from '../components/Skills';
+import { Experience } from '../components/Experience';
+import { Portfolio } from '../components/Portfolio';
+import { Header } from '../components/Header/Header';
 import background from '../img/background-image.png'
 import './styles.sass';
-import { Skills } from '../components/Skills/Skills';
+import { useTranslation } from 'react-i18next';
 
 export const App = () => {
+  const { t } = useTranslation()
   const [closeBurguer, setCloseBurguer] = useState(false)
   const top = useRef(null)
   const profile = useRef(null)
@@ -18,6 +24,9 @@ export const App = () => {
 
   const handlerNavbar = (value) => {
     switch (value) {
+      case 'top':
+        top.current && top.current.scrollIntoView({ behavior: 'smooth' })
+        break;
       case 'navbar.profile':
         profile.current && profile.current.scrollIntoView({ behavior: 'smooth' })
         break;
@@ -42,18 +51,16 @@ export const App = () => {
     <div className="app" ref={top}>
       <Navbar onClick={handlerNavbar} closeBurguer={closeBurguer} />
       <div className='app__body' onClick={() => setCloseBurguer(true)}>
-        <header className='app__header'>
-          <h1 className='app__title'>Web Developer</h1>
-          <img src={background} alt='background' className='app__background' />
-
-        </header>
+        <Header title={t('header.title')} description={t('header.description')} backgroundImage={background} />
+        <div ref={profile}></div>
+        <Profile />
+        <div ref={skills}></div>
+        <Skills />
+        <div ref={experience}></div>
+        <Experience />
+        <div ref={portofolio}></div>
+        <Portfolio />
         <i className="fas fa-arrow-alt-circle-up " onClick={() => handlerNavbar('top')}></i>
-
-
-        <Profile divRef={profile} />
-        <Skills divRef={skills} />
-
-
       </div>
       <Contact divRef={contact} />
     </div>

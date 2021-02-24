@@ -5,6 +5,34 @@
         "experience":"Experiencia",
         "portfolio":"Portafolio",
         "contact":"Contacto"
-    
-    }   
+    },
+    "header":{
+        "title":"Web Developer",
+        "description":"Experiencia Full-Stack en web y mobil"
+    },
+    "profile":{
+        "description1":"Pro-Activo y autodidata apasionado por la programación. Me encanta el trabajo bien hecho y la buenas práticas, me gustán los retos y estar en al pie de cañón." ,
+        "description2":"Trabaje siempre con metodologías Agile, formándome continuamente en HTML5, CSS3, Sass, Javascript ES5/ES6, NodeJS, express, mongoDB, mongoose, rest-API, graphQL, TDD, typescript, React y React-Native y much más..."   
+    },
+    "experience":{
+        "title1":"Full-Stack developer - Freelancer,Barcelona - 2021",
+        "description1":"Proyecto Full-stack - Web app creado con webSocket. Implementado con NodeJS, express, mongoose, TDD, ReactJS, sass, i18next, redux, react-router-dom.",
+        "title2":"Web/Mobile developer - OptimalWay, Barcelona - 06/2020-01/2020",
+        "description2":"Web y App para el control de aforos de instalaciones. Implementado con Agile, React-Native-web y React-Native, typescript, i18next, redux, react-navigation.",
+        "title3":"Web developer - SkylabCoders, Barcelona - 2020",
+        "description3":"Proyecto Full-stack - App mobil para compartir libros. Implementado con NodeJS, express, mongoose, TDD y React-native."
+    },
+    "portfolio":{
+        "chat":"chat",
+        "books":"books",
+        "pasapalabra":"pasapalabra",
+        "conecta4":"conecta4",
+        "calculator":"calculator"
+    },
+    "download":{
+        "curriculum":"Descarga mi curriculum"
+    }  
+
 }
+
+

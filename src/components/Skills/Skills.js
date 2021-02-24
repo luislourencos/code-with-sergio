@@ -1,4 +1,5 @@
 import React from 'react';
+import { Box } from '../Box'
 import front from '../../img/front.png'
 import back from '../../img/back.png'
 import skills from '../../img/skills.png'
@@ -17,6 +18,9 @@ import storybook from '../../img/storybook.png'
 import jest from '../../img/jest.png'
 import react from '../../img/react.png'
 import reactnative from '../../img/react-native.png'
+import typescript from '../../img/typescript.png'
+import redux from '../../img/redux.png'
+import router from '../../img/react-router.png'
 
 import './styles.sass';
 import { useTranslation } from 'react-i18next';
@@ -25,11 +29,8 @@ import { useTranslation } from 'react-i18next';
 export const Skills = ({ divRef }) => {
     const { t } = useTranslation()
     return (
-        <div ref={divRef} className='skills'>
-            <div className='skills__skill'>
-                <img className='skills__image-skill' src={skills} alt='skill' />
-            </div>
-            <p className='skills__title'>{t('navbar.skills')}</p>
+        <Box divRef={divRef} image={skills} right={true} title={t('navbar.skills')}>
+
             <div className='skills__back'>
                 <div className='skills__back-header'>
                     <h3>Back-end</h3>
@@ -57,13 +58,17 @@ export const Skills = ({ divRef }) => {
                     <img className='skills__image-logo' src={css} alt='css' />
                     <img className='skills__image-logo' src={sass} alt='sass' />
                     <img className='skills__image-logo' src={js} alt='js' />
-                    <img className='skills__image-logo' src={react} alt='react' />
-                    <img className='skills__image-logo' src={reactnative} alt='skill' />
-                    <img className='skills__image-logo' src={storybook} style={{ width: '120px' }} alt='storybook' />
+                    <img className='skills__image-logo' src={typescript} alt='ts' />
+                    <img className='skills__image-logo' src={react} alt='react' style={{ width: '120px' }} />
+                    <img className='skills__image-logo' src={reactnative} alt='skill' style={{ width: '85px', border: '1px solid #61DAFB' }} />
+                    <img className='skills__image-logo' src={redux} alt='skill' />
+                    <img className='skills__image-logo' src={router} alt='skill' style={{ width: '100px' }} />
+                    <img className='skills__image-logo' src={storybook} style={{ width: '130px' }} alt='storybook' />
                     <img className='skills__image-logo' src={jest} style={{ width: '80px' }} alt='jest' />
                 </div>
             </div>
+        </Box>
 
-        </div>
+
     );
 };

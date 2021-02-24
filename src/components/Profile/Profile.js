@@ -2,6 +2,8 @@ import React from 'react';
 import profileImage from '../../img/profile.jpeg'
 import './styles.sass';
 import Fade from 'react-reveal/Fade'
+import pdf_es from '../../img/curriculum_sergio_luis_es.pdf'
+import pdf_en from '../../img/curriculum_sergio_luis_en.pdf'
 import { useTranslation } from 'react-i18next';
 
 export const Profile = ({ divRef }) => {
@@ -9,11 +11,15 @@ export const Profile = ({ divRef }) => {
     return (
 
         <Fade left>
-            <div ref={divRef} className='profile'>
+            <section ref={divRef} className='profile'>
                 <img src={profileImage} alt='profile' className='profile__image' />
                 <h2 className='profile__title'>{t('navbar.profile')}</h2>
-                <div className='profile__description'>{t('profile.description')}</div>
-            </div>
+                <div className='profile__description'>
+                    <p className='profile__text'>{t('profile.description1')}</p>
+                    <p className='profile__text'>{t('profile.description2')}</p>
+                </div>
+                <a href={localStorage.getItem('language') === 'es' ? pdf_es : pdf_en} download='curriculum_sergio_luis.pdf' className='profile__curriculum'>{t('download.curriculum')}</a>
+            </section>
         </Fade>
     );
 };
