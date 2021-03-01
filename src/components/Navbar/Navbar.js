@@ -39,7 +39,7 @@ export const Navbar = ({ items = [
         <nav className='navbar' style={{ top: visible ? '0' : '-75px' }}>
             <img src={logo} className='navbar__logo' alt='logo' />
             <div className='navbar__nav'>
-                <select className='navbar__select' defaultValue={localStorage.getItem('language')} onChange={(e) => {
+                <select className='navbar__select' defaultValue={localStorage.getItem('language') || 'es'} onChange={(e) => {
                     changeLanguage(e.target.value)
                 }}
                 >

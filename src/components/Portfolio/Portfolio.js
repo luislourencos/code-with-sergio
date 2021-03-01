@@ -26,13 +26,13 @@ export const Portfolio = ({ divRef }) => {
                     <p className='portfolio__description'>{t('portfolio.books')}</p>
                 </div>
             </a>
-            <a href='https://luislourencos.github.io/connecta4/' target='_blank' rel='noreferrer' className='portfolio'>
+            <a href='https://luislourencos.github.io/pasapalabra/' target='_blank' rel='noreferrer' className='portfolio'>
                 <div className='portfolio__box'>
                     <img src={pasapalabra} alt='_image' className='portfolio__image' />
                     <p className='portfolio__description'>{t('portfolio.pasapalabra')}</p>
                 </div>
             </a>
-            <a href='https://luislourencos.github.io/pasapalabra/' target='_blank' rel='noreferrer' className='portfolio'>
+            <a href='https://luislourencos.github.io/connecta4/' target='_blank' rel='noreferrer' className='portfolio'>
                 <div className='portfolio__box'>
                     <img src={conecta4} alt='_image' className='portfolio__image' />
                     <p className='portfolio__description'>{t('portfolio.conecta4')}</p>

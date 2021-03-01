@@ -11,7 +11,7 @@
         "description":"Experiencia Full-Stack en web y mobil"
     },
     "profile":{
-        "description1":"Pro-Activo y autodidata apasionado por la programación. Me encanta el trabajo bien hecho y la buenas práticas, me gustán los retos y estar en al pie de cañón." ,
+        "description1":"Pro-Activo y autodidata apasionado por la programación. Me encanta el trabajo bien hecho, el trabajo en equipo y la buenas práticas, me gustán los retos y apreender nuevas habilidades." ,
         "description2":"Trabaje siempre con metodologías Agile, formándome continuamente en HTML5, CSS3, Sass, Javascript ES5/ES6, NodeJS, express, mongoDB, mongoose, rest-API, graphQL, TDD, typescript, React y React-Native y much más..."   
     },
     "experience":{
@@ -23,11 +23,11 @@
         "description3":"Proyecto Full-stack - App mobil para compartir libros. Implementado con NodeJS, express, mongoose, TDD y React-native."
     },
     "portfolio":{
-        "chat":"chat",
-        "books":"books",
-        "pasapalabra":"pasapalabra",
-        "conecta4":"conecta4",
-        "calculator":"calculator"
+        "chat":"Proyecto Full-stack implementado con ReactJs utilizando los sockets",
+        "books":"Proyecto Full-stack implementado con React-Native",
+        "pasapalabra":"Juego de pasapalabra.",
+        "conecta4":"Juego de conecta4.",
+        "calculator":"Calculadora simples."
     },
     "download":{
         "curriculum":"Descarga mi curriculum"

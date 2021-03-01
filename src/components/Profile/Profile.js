@@ -4,6 +4,7 @@ import './styles.sass';
 import Fade from 'react-reveal/Fade'
 import pdf_es from '../../img/curriculum_sergio_luis_es.pdf'
 import pdf_en from '../../img/curriculum_sergio_luis_en.pdf'
+import { Button } from '../../components/Button'
 import { useTranslation } from 'react-i18next';
 
 export const Profile = ({ divRef }) => {
@@ -18,7 +19,7 @@ export const Profile = ({ divRef }) => {
                     <p className='profile__text'>{t('profile.description1')}</p>
                     <p className='profile__text'>{t('profile.description2')}</p>
                 </div>
-                <a href={localStorage.getItem('language') === 'es' ? pdf_es : pdf_en} download='curriculum_sergio_luis.pdf' className='profile__curriculum'>{t('download.curriculum')}</a>
+                <Button href={localStorage.getItem('language') === 'es' ? pdf_es : pdf_en} download='curriculum_sergio_luis.pdf' className='profile__curriculum'>{t('download.curriculum')}</Button>
             </section>
         </Fade>
     );

@@ -1,7 +1,7 @@
 import i18next from 'i18next';
 
 i18next.init({
-    lng: localStorage.getItem('language') || 'en',
+    lng: localStorage.getItem('language') || 'es',
     interpolation: {
         escapeValue: false,
     },

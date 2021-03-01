@@ -21,6 +21,7 @@ import reactnative from '../../img/react-native.png'
 import typescript from '../../img/typescript.png'
 import redux from '../../img/redux.png'
 import router from '../../img/react-router.png'
+import mysql from '../../img/mysql.png'
 
 import './styles.sass';
 import { useTranslation } from 'react-i18next';
@@ -41,6 +42,7 @@ export const Skills = ({ divRef }) => {
                     <img className='skills__image-logo' src={expressjs} style={{ width: '80px' }} alt='expressjs' />
                     <img className='skills__image-logo' src={swagger} alt='swagger' />
                     <img className='skills__image-logo' src={mongodb} alt='skill' />
+                    <img className='skills__image-logo' src={mysql} alt='skill' />
                     <img className='skills__image-logo' src={mochachai} style={{ width: '120px' }} alt='skill' />
                     <img className='skills__image-logo' src={graphql} alt='skill' />
                     <img className='skills__image-logo' src={apollo} alt='skill' />
