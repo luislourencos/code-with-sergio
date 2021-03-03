@@ -5,6 +5,33 @@
         "experience":"Experience",
         "portfolio":"Portfolio",
         "contact":"Contact"
-    }   
+    },
+    "header":{
+        "title":"Web Developer",
+        "description":"Experiencw Full-Stack web-mobile"
+    },
+    "profile":{
+        "description1":"Pro-active and self-taught, passionate about programming. I love a job well done, team-working and good pratices. I like challenges and learning new skills" ,
+        "description2":"I have always worked with Agile methodologies, continually training myself in HTML5, CSS3, Sass, Javascript ES5/ES6, NodeJS, express, mongoDB, mongoose, mySQL, rest-API, graphQL, TDD, typescript, React and React-Native and much more..."   
+    },
+    "experience":{
+        "title1":"Full-Stack developer - Freelancer,Barcelona - 2021",
+        "description1":"Proyecto Full-stack - Web app developed with webSocket. Implemented with NodeJS, express, mongoose, TDD, ReactJS, sass, i18next, redux, react-router-dom.",
+        "title2":"Web/Mobile developer - OptimalWay, Barcelona - 06/2020-01/2020",
+        "description2":"Web and mobile App project for capacity control of sports facilities. Implemented with Agile, React-Native-web y React-Native, typescript, i18next, redux, react-navigation.",
+        "title3":"Web developer - SkylabCoders, Barcelona - 2020",
+        "description3":"Full-stack project - Mobile App for book sharing. Implemented with NodeJS, express, mongoose, TDD y React-native."
+    },
+    "portfolio":{
+        "chat":"Full-stack project implemented with ReactJs using websockets",
+        "books":"Full-stack project implemented with React-Native",
+        "pasapalabra":"The Alphabet Quiz Game",
+        "conecta4":"Game connect four",
+        "calculator":"Simple calculator."
+    },
+    "download":{
+        "curriculum":"Download my Curriculum Vitae"
+    }  
+  
 
 }

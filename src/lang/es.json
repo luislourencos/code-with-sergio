@@ -3,16 +3,16 @@
         "profile":"Perfil",
         "skills":"Habilidades",
         "experience":"Experiencia",
-        "portfolio":"Portafolio",
+        "portfolio":"Portfolio",
         "contact":"Contacto"
     },
     "header":{
         "title":"Web Developer",
-        "description":"Experiencia Full-Stack en web y mobil"
+        "description":"Experiencia Full-Stack en web y móvil"
     },
     "profile":{
-        "description1":"Pro-Activo y autodidata apasionado por la programación. Me encanta el trabajo bien hecho, el trabajo en equipo y la buenas práticas, me gustán los retos y apreender nuevas habilidades." ,
-        "description2":"Trabaje siempre con metodologías Agile, formándome continuamente en HTML5, CSS3, Sass, Javascript ES5/ES6, NodeJS, express, mongoDB, mongoose, rest-API, graphQL, TDD, typescript, React y React-Native y much más..."   
+        "description1":"Pro-Activo y autodidacta apasionado por la programación. Me encanta el trabajo bien hecho, el trabajo en equipo y las buenas práticas, me gustan los retos y apreender nuevas habilidades." ,
+        "description2":"He trabajado siempre con metodologías Agile, formándome contínuamente en HTML5, CSS3, Sass, Javascript ES5/ES6, NodeJS, express, mongoDB, mongoose, mySQL, rest-API, graphQL, TDD, typescript, React y React-Native y much más..."   
     },
     "experience":{
         "title1":"Full-Stack developer - Freelancer,Barcelona - 2021",
