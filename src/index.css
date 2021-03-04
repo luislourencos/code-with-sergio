@@ -222,15 +222,9 @@
   position: relative;
   bottom: 60px;
 }
-.profile__curriculum {
-  position: relative;
-  bottom: 30px;
-  color: #0F64C2;
-  text-decoration: none;
-}
 .profile__curriculum:hover {
+  color: white;
   transition: 0.3s;
-  color: #53C8FA;
 }
 
 .portfolio {
@@ -258,7 +252,8 @@
   width: 50px;
 }
 .portfolio__description {
-  margin: 0 5px;
+  text-align: right;
+  margin: 0 10px;
 }
 
 .skills__back {
@@ -473,7 +468,7 @@
 }
 .header__image {
   height: 900px;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 @media (max-width: 800px) {
@@ -482,6 +477,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 150px;
   }
   .header__box {
     left: 20px;

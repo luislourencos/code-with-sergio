@@ -19,7 +19,9 @@ export const Profile = ({ divRef }) => {
                     <p className='profile__text'>{t('profile.description1')}</p>
                     <p className='profile__text'>{t('profile.description2')}</p>
                 </div>
+
                 <Button href={localStorage.getItem('language') === 'es' ? pdf_es : pdf_en} download='curriculum_sergio_luis.pdf' className='profile__curriculum'>{t('download.curriculum')}</Button>
+
             </section>
         </Fade>
     );
