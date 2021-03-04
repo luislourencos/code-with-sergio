@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/code-with-sergio/static/css/main.e138f57d.chunk.css",
-    "main.js": "/code-with-sergio/static/js/main.b5fbf84e.chunk.js",
-    "main.js.map": "/code-with-sergio/static/js/main.b5fbf84e.chunk.js.map",
+    "main.css": "/code-with-sergio/static/css/main.c4a13f7d.chunk.css",
+    "main.js": "/code-with-sergio/static/js/main.d5639f87.chunk.js",
+    "main.js.map": "/code-with-sergio/static/js/main.d5639f87.chunk.js.map",
     "runtime-main.js": "/code-with-sergio/static/js/runtime-main.8bafbd47.js",
     "runtime-main.js.map": "/code-with-sergio/static/js/runtime-main.8bafbd47.js.map",
     "static/js/2.cb9d13c2.chunk.js": "/code-with-sergio/static/js/2.cb9d13c2.chunk.js",
     "static/js/2.cb9d13c2.chunk.js.map": "/code-with-sergio/static/js/2.cb9d13c2.chunk.js.map",
     "index.html": "/code-with-sergio/index.html",
-    "static/css/main.e138f57d.chunk.css.map": "/code-with-sergio/static/css/main.e138f57d.chunk.css.map",
+    "static/css/main.c4a13f7d.chunk.css.map": "/code-with-sergio/static/css/main.c4a13f7d.chunk.css.map",
     "static/js/2.cb9d13c2.chunk.js.LICENSE.txt": "/code-with-sergio/static/js/2.cb9d13c2.chunk.js.LICENSE.txt",
     "static/media/apollo.4b3aa61c.png": "/code-with-sergio/static/media/apollo.4b3aa61c.png",
     "static/media/back.ff7cd0c7.png": "/code-with-sergio/static/media/back.ff7cd0c7.png",
@@ -39,7 +39,7 @@
   "entrypoints": [
     "static/js/runtime-main.8bafbd47.js",
     "static/js/2.cb9d13c2.chunk.js",
-    "static/css/main.e138f57d.chunk.css",
-    "static/js/main.b5fbf84e.chunk.js"
+    "static/css/main.c4a13f7d.chunk.css",
+    "static/js/main.d5639f87.chunk.js"
   ]
 }
