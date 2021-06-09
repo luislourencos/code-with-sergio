@@ -23,6 +23,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "sass": "node-sass -w sass/ -o css/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",

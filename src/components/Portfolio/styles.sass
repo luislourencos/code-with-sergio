@@ -1,21 +1,55 @@
 @import '../../variables'
 .portfolio
-    text-decoration: none
-    color: black
-    width: 92%
+    &__container
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        background-color: $color-black
+        padding: 50px 20px
 
-    @include flex-center()
-    &__box
-        margin: 10px 0 
-        padding: 10px
+.card__game
+    width: 250px
+    height: 350px
+    border: 2px solid red 
+    background-color: white  
+    margin: 25px
+    border-radius: 3px 
+    @include flex-center(column,space-between,center)
+    transition-duration: 0.3s
+    &:hover
+        transform: scale(1.05)
+    &-text
         width: 100%
-        border-radius: 20px
-        background-color: $color-quartiary
-        @include flex-center(_, space-between, flex-start)
-    &__image
-        border-radius: 20px 
-        width: 50px
-    &__description
-        text-align: right
-        margin: 0 10px 
+        height: 150px
+        padding: 10px 0px
+        background-color: $color-blue
+        @include flex-center(column, space-around,center) 
+    &-title
+        text-align: center
+        color: white
+        font-weight: bold
+        font-size: 1.3em
+    &-description        
+    &-image
+        background-color: white
+        width: 150px
+        height: 100%
+        border-top-left-radius: 3px
+        border-top-right-radius: 3px
+        @include flex-center(colum,center,center)
+        &-item
+           
+            width: 100%
+            cover: fit    
 
+.align-left
+    width: 100%
+    @include flex-center(column,flex-start,flex-start)     
+@media screen and ( max-width: 600px  )
+    .card__game
+        width: 250px
+        height: 350px
+        border: 2px solid red 
+        background-color: white  
+        margin: 10px 0px

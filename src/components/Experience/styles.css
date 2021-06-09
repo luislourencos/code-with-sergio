@@ -1,0 +1,84 @@
+.typewriter .experience__title {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 30px; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2.5s steps(30, end),
+      blink-caret 2.75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #2980b9; }
+  }
+
+  .experience__title{
+    font-size: 2em;
+    font-weight: bold;
+    color: #2980b9
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "exp1 exp1 exp1 exp1 exp1 line . . . . . "
+      ". . . . . line exp2 exp2 exp2 exp2 exp2"
+      "exp3 exp3 exp3 exp3 exp3 line . . . . ."
+      ". . . . . line exp4 exp4 exp4 exp4 exp4";
+  }
+  
+  .exp1 { grid-area: exp1; }
+  
+  .exp2 { grid-area: exp2; }
+  
+  .exp3 { grid-area: exp3; }
+  
+  .exp4 { grid-area: exp4; }
+  
+  .line { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: line;
+    width: 100%;
+    height: 100%;
+    background-color:#2980b9;
+    position: relative;
+   }
+   .dot-line{
+     position: absolute;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color:#2980b9;
+     top:-30px;
+   }
+
+   @media screen and ( max-width:800px){
+     .container{
+      grid-template-areas:
+      ". exp1 exp1 exp1 exp1 exp1 exp1 exp1 exp1 exp1"
+      ". exp2 exp2 exp2 exp2 exp2 exp2 exp2 exp2 exp2"
+      ". exp3 exp3 exp3 exp3 exp3 exp3 exp3 exp3 exp3"
+      ". exp4 exp4 exp4 exp4 exp4 exp4 exp4 exp4 exp4";
+     }
+     .line{
+       height: 0px;
+     }
+   }
+  
+   

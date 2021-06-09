@@ -22,54 +22,223 @@ import typescript from '../../img/typescript.png'
 import redux from '../../img/redux.png'
 import router from '../../img/react-router.png'
 import mysql from '../../img/mysql.png'
-
+import { Card } from './Card'
 import './styles.sass';
+import './styles.css';
 import { useTranslation } from 'react-i18next';
-
+import Fade from 'react-reveal/Fade';
 
 export const Skills = ({ divRef }) => {
     const { t } = useTranslation()
-    return (
-        <Box divRef={divRef} image={skills} right={true} title={t('navbar.skills')}>
 
-            <div className='skills__back'>
-                <div className='skills__back-header'>
-                    <h3>Back-end</h3>
-                    <img className='skills__image-back' src={back} alt='back' />
+    const arrayCardBack = [
+        {
+            src: nodejs,
+            title: "NodeJS",
+            description: "desciption"
+        },
+        {
+            src: mongodb,
+            title: "MongoDB mongoose",
+            description: "desciption"
+        },
+        {
+            src: mysql,
+            title: "mySQL",
+            description: "desciption"
+        },
+        {
+            src: expressjs,
+            title: "ExpressJS",
+            description: "desciption"
+        },
+        {
+            src: swagger,
+            title: "Swagger",
+            description: "desciption"
+        },
+        {
+            src: mochachai,
+            title: "TDD testing",
+            description: "desciption"
+        },
+        {
+            src: graphql,
+            title: "Graph QL",
+            description: "desciption"
+        },
+        {
+            src: apollo,
+            title: "Apollo Server",
+            description: "desciption"
+        },
+    ]
+    const arrayCardFront = [
+        {
+            src: js,
+            title: "JavaScript",
+            description: "desciption"
+        },
+        {
+            src: typescript,
+            title: "TypeScript",
+            description: "desciption"
+        },
+        {
+            src: html,
+            title: "HTML 5",
+            description: "desciption"
+        },
+        {
+            src: css,
+            title: "CSS 3",
+            description: "desciption",
+            width: "70%"
+        },
+        {
+            src: sass,
+            title: "SASS",
+            description: "desciption"
+        },
+        {
+            src: react,
+            title: "React JS",
+            description: "desciption"
+        },
+        {
+            src: reactnative,
+            title: "React Native",
+            description: "desciption"
+        },
+        {
+            src: redux,
+            title: "React Redux",
+            description: "desciption"
+        },
+        {
+            src: router,
+            title: "React Router",
+            description: "desciption"
+        },
+    ]
+
+    return (
+        <div>
+
+            <div divRef={divRef} className="skills">
+
+                <div className="skills__container">
+                    <div className="align-left">
+
+                        <div className="typewriter">
+                            <h1 className="skills__title" >{t('skills.languageTitle')}</h1>
+                        </div>
+                    </div>
+                    <div className="language__container"  >
+                        <Fade left>
+                            <div className="language__box">
+                                <h3 className="language__name">{t('skills.languagePor')}</h3>
+                                <div className="meter">
+                                    <span style={{ width: "100%" }}><span className="progress"></span></span>
+                                </div>
+                            </div>
+                        </Fade>
+                        <Fade left>
+                            <div className="language__box">
+                                <h3 className="language__name">{t('skills.languageEs')}</h3>
+                                <div className="meter">
+                                    <span style={{ width: "90%" }}><span className="progress"></span></span>
+                                </div>
+                            </div>
+                        </Fade>
+                        <Fade left>
+
+                            <div className="language__box">
+                                <h3 className="language__name">{t('skills.languageIn')}</h3>
+                                <div className="meter">
+                                    <span style={{ width: "60%" }}><span className="progress"></span></span>
+                                </div>
+                            </div>
+                        </Fade>
+                        <Fade left>
+
+                            <div className="language__box">
+                                <h3 className="language__name">{t('skills.languageCat')}</h3>
+                                <div className="meter">
+                                    <span style={{ width: "60%" }}><span className="progress"></span></span>
+                                </div>
+                            </div>
+                        </Fade>
+                    </div>
                 </div>
-                <div className='skills__back-body'>
-                    <img className='skills__image-logo' src={nodejs} alt='nodejs' />
-                    <img className='skills__image-logo' src={expressjs} style={{ width: '80px' }} alt='expressjs' />
-                    <img className='skills__image-logo' src={swagger} alt='swagger' />
-                    <img className='skills__image-logo' src={mongodb} alt='skill' />
-                    <img className='skills__image-logo' src={mysql} alt='skill' />
-                    <img className='skills__image-logo' src={mochachai} style={{ width: '120px' }} alt='skill' />
-                    <img className='skills__image-logo' src={graphql} alt='skill' />
-                    <img className='skills__image-logo' src={apollo} alt='skill' />
+
+                <div className="skills__container">
+                    <div className="align-right">
+
+                        <div className="typewriter">
+                            <h1 className="skills__title" >{t('skills.education')}</h1>
+                        </div>
+                    </div>
+
+                    <div className="language__container"  >
+                        <Fade right>
+
+                            <div className="study__container">
+                                <h3 className="study__name">{t('skills.study1')}</h3>
+                            </div>
+                        </Fade>
+                        <Fade right>
+                            <div className="study__container">
+                                <h3 className="study__name">{t('skills.study2')}</h3>
+                            </div>
+                        </Fade>
+                        <Fade right>
+                            <div className="study__container">
+                                <h3 className="study__name">{t('skills.study3')}</h3>
+                            </div>
+                        </Fade>
+
+                        <Fade right>
+                            <div className="study__container">
+                                <h3 className="study__name">{t('skills.study4')}</h3>
+                            </div>
+                        </Fade>
+                    </div>
                 </div>
+
+
             </div>
-            <div className='skills__back'>
-                <div className='skills__back-header'>
-                    <h3>Front-end</h3>
-                    <img className='skills__image-front' src={front} alt='back' />
-                </div>
+
+
+            <div className="skills__title-container">
+
+                <h1 className="skills__title-slider">{t('skills.backEnd')}</h1>
             </div>
-            <div className='skills__back-body'>
-                <div className='skills__back-body'>
-                    <img className='skills__image-logo' src={html} alt='html' />
-                    <img className='skills__image-logo' src={css} alt='css' />
-                    <img className='skills__image-logo' src={sass} alt='sass' />
-                    <img className='skills__image-logo' src={js} alt='js' />
-                    <img className='skills__image-logo' src={typescript} alt='ts' />
-                    <img className='skills__image-logo' src={react} alt='react' style={{ width: '120px' }} />
-                    <img className='skills__image-logo' src={reactnative} alt='skill' style={{ width: '85px', border: '1px solid #61DAFB' }} />
-                    <img className='skills__image-logo' src={redux} alt='skill' />
-                    <img className='skills__image-logo' src={router} alt='skill' style={{ width: '100px' }} />
-                    <img className='skills__image-logo' src={storybook} style={{ width: '130px' }} alt='storybook' />
-                    <img className='skills__image-logo' src={jest} style={{ width: '80px' }} alt='jest' />
+            <div className="card__container">
+                <div className="card">
+                    {arrayCardBack.map((element, index) => {
+                        return (
+
+
+                            <Card key={index} src={element.src} title={element.title} description={element.description} />
+
+                        )
+                    })}
                 </div>
+
             </div>
-        </Box>
+            <div className="skills__title-container">
+                <h1 className="skills__title-slider">{t('skills.backFront')}</h1>
+            </div>
+            <div className="card__container">
+                <div className="card">
+                    {arrayCardFront.map((element, index) => {
+                        return <Card key={index} src={element.src} title={element.title} description={element.description} width={element.width} />
+                    })}
+                </div>
+
+            </div>
+        </div>
 
 
     );

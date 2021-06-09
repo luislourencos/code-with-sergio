@@ -1,11 +1,62 @@
 @import '../../variables'
 .contact
-    font-size: 40px
-    background-color: $color-primary
+    padding: 1em 0em 0em 0.5em
+    bottom: 0px
+    posi
+    background-color: $color-black
     -webkit-box-shadow: 1px -4px 14px -7px $color-terteary
     box-shadow: 1px -4px 14px -7px $color-terteary
-    @include flex-center()
+    @include flex-center(column)
+    &__info
+        color: white
+        font-size: 1em
+    &__form
+        visibility: visible
+        opacity: 1
+        max-width: 600px
+        min-width: 350px
+        border: 2px solid white
+        border-radius: 3px
+        margin: 20px 0px
+        padding: 20px
+        @include flex-center(column)
+        transition: 0.3s
+    &__form-none
+        height: 0px
+        overflow: hidden
+        visibility: hidden
+        opacity: 0
+        transition: visibility 0s, opacity 0.5s linear
+     
+    &__input-box
+        width: 100%
+        color: white
+        margin: 5px 0px
+        @include flex-center(column,flex-start,flex-start)
+    &__input
+        width: 100%
+        font-size: 1.2em
+        padding: 0.2em 
+        outline: none
+        
+    &__textarea
+        font-family: 'Roboto', sans-serif
+        width: 100%
+        font-size: 1.2em
+        padding: 0.2em 
+        outline: none
+        resize: none
+        font-weight: bold
+        
+    &__label
+        margin: 2px 0px
+        font-weight: bold
+        text-transform: capitalize
+    &__icons
+      
+        @include flex-center()
     &__icon
+        font-size: 2em
         margin: 10px
         cursor: pointer
         color: black
@@ -13,10 +64,13 @@
             opacity: 0.7
             transition-duration: .300s
     &__git
-        color: #242A2E
+        color: white
     &__lin
-        color: #0D65C2
+        color: white
     &__whatsapp
-        color: #00E776
+        color: white
     &__mail
-        color: #EA4435
+        color: white 
+@media screen and ( max-width: 600px  )
+    .contact__input-box
+          width: 80%

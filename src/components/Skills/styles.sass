@@ -1,27 +1,129 @@
 @import '../../variables'
 
-.skills    
-    &__back 
-        width: 93%
+.meter 
+    width: 80%
+    margin: 50px
+    height: 15px
+    border-radius: 10px
+    position: relative
+    background: #F8F8F8
+    overflow: hidden
+
+.meter span 
+    display: block
+    height: 100%
+
+.progress 
+    background-color:#2A80B9
+    animation: progressBar 4s ease-in-out
+    animation-fill-mode: both 
+
+
+@keyframes progressBar 
+  0% 
+    width: 0
+  100% 
+    width: 100%
+
+.language__container
+    background-color: $color-black
+    width: 100%
+    min-height: 280px
+    
+    padding-left: 30px 
+    @include flex-center(column, flex-start)
+.language__box
+    height: 70px
+    width: 90%
+    @include flex-center(row,flex-start,center)
+    
+.language__name
+    color: white
+    width: 120px
+    font-weight: bold  
+
+
+.skills
+   width: 100% 
+   @include flex-center(row,space-between,flex-start)   
+   &__container
+       width: 100%
+       height: 100%
+       @include flex-center(column)   
+
+.study__container
+    color: white
+    height: 70px
+    width: 90%
+    padding-right: 50px
+    @include flex-center(row,flex-end,center)
+
+@media screen and ( max-width: 800px  )
+    .skills
+        @include flex-center(column,center,center)   
+    .study__container 
+        padding-left: 30px
+        @include flex-center(row,flex-start,center) 
+
+.card
+    width: 90%
+    display: flex
+    flex-direction: row
+    overflow-y: auto
+    overflow-x: scroll
+    scroll-behavior: smooth  
+    background-color: white
+    border-radius: 3px
+    &__container
+        width: 100%
+        background-color: $color-black  
+        padding: 10px 0px
+        @include flex-center()
+  
+    &__item
+        min-width: 200px
+        height: 300px
+        margin: 20px
+        border-radius: 3px
+        background-color: $color-black 
         @include flex-center(column)
-        &-header
-            padding: 0px 10px
-            border-radius: 5px
-            margin: 10px
+        transition-duration: 0.3s
+        &:hover
+            background-color: $color-blue
+            transform: scale(1.05)
+            box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75)
+            -webkit-box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75)
+            -moz-box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75)
+        &-text
+            background-color: $color-blue
+            width: 170px
+            border-radius: 3px 
+            min-height: 100px
+            @include flex-center(column)     
+        &-title
+            text-align: center
+            color: white
+            font-weight: bold
+            font-size: 1.3em
+        &-container
+            background-color: white
+            padding: 10px
+            border-top-left-radius: 3px
+            border-top-right-radius: 3px
+            width: 150px
+            height: 150px
+            @include flex-center()
+        &-img
             width: 100%
-            @include flex-center(row,space-between,center)
-            background-color: $color-quartiary
-        &-body 
-            @include flex-center(row,center,center) 
-            flex-wrap: wrap  
-    &__image
-        &-front
-            width: 60px
-        &-back
-            position: relative
-            right: 5px
-            width: 40px
-        &-logo 
-            width: 50px
-            margin: 8px       
+            cover: fit
+        &-description    
+
+
+.align-right
+    width: 100%
+    @include flex-center(column,flex-start,flex-end) 
+
+.align-left
+    width: 100%
+    @include flex-center(column,flex-start,flex-start)     
 

@@ -8,11 +8,14 @@
     },
     "header":{
         "title":"Web Developer",
-        "description":"Experiencia Full-Stack"
+        "description":"Full-Stack"
     },
     "profile":{
-        "description1":"Pro-Activo y autodidacta apasionado por la programación. Me encanta el trabajo bien hecho, el trabajo en equipo y las buenas práticas, me gustan los retos y apreender nuevas habilidades." ,
-        "description2":"He trabajado siempre con metodologías Agile, formándome contínuamente en HTML5, CSS3, Sass, Javascript ES5/ES6, NodeJS, express, mongoDB, mongoose, mySQL, rest-API, graphQL, TDD, typescript, React y React-Native y much más..."   
+        "description1":"Pro-Activo y autodidacta apasionado por la programación." ,
+        "description2":"Me gusta trabajar en equipo y con experiencia en remoto." ,  
+        "description3":"Me encanta el trabajo bien hecho y las buenas práticas." ,  
+        "description4":"Habilidade para trabajar bajo presión." ,  
+        "description5":"Motivado por nuevos retos y nuevas tecnologías." 
     },
     "experience":{
         "title1":"Full-Stack developer - Freelancer,Barcelona - 2021",
@@ -31,7 +34,26 @@
     },
     "download":{
         "curriculum":"Descarga mi Curriculum Vitae"
-    }  
+    },
+    "general":{
+        "name":"Nombre",
+        "placeholderName":"nombre",
+        "email":"Email",
+        "placeholderEmail":"email",
+        "subject":"Assunto",
+        "placeholderSubject":"assunto",
+        "message":"Mensaje",
+        "placeholderMessage":"Deje su mensaje!",
+        "send":"Enviar"
+       
+    },
+    "skills":{
+        "study1":"Skylab Coders Academy - Full Stack Developer - 2020",
+        "study2":"ITAcademy cibernarium - Front End Developer -2020",
+        "study3":"Universidad de Coimbra - Ingeniería Mecánica - 2010",
+        "study4":"UPC - Ingeniería Industrial - 2008"
+    }
+
 
 }
 

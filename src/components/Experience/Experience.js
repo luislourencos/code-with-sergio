@@ -9,44 +9,125 @@ import optimalway from '../../img/optimalway.png'
 import afority from '../../img/afority.png'
 
 import './styles.sass';
+import './styles.css';
 import { useTranslation } from 'react-i18next';
+import { CardExperience } from './CardExperience';
 
 export const Experience = ({ divRef }) => {
     const { t } = useTranslation()
     return (
-        <Box divRef={divRef} image={experience} left={true} title={t('navbar.experience')}>
-            <div className='experience'>
-                <a className='experience__header' target='_blank' href={'https://luislourencos.github.io/code-with-sergio'} rel="noreferrer">
-                    <img src={logo} alt='_image' className='experience__image' style={{ width: '80px' }} />
-                    <p className='experience__title'>{t('experience.title1')}</p>
-                </a>
-                <a target='_blank' href={'https://chat-app-luislouro.herokuapp.com/'} className='experience__body' rel="noreferrer">
-                    <img src={chat} alt='_image' className='experience__image' />
-                    <p className='experience__description'>{t('experience.description1')}</p>
-                </a>
+        <div divRef={divRef} className="experience">
+            <div className='align-left'>
+                <div className="typewriter">
+                    <h1 className="experience__title">{t('experience.title')}</h1>
+                </div>
             </div>
-            <div className='experience'>
-                <a className='experience__header' target='_blank' href={'https://www.optimalwayconsulting.com/'} rel="noreferrer">
-                    <img src={optimalway} alt='_image' className='experience__image' />
-                    <p className='experience__title'>{t('experience.title2')}</p>
-                </a>
-                <a target='_blank' href={'https://afority.com/index.html'} className='experience__body' rel="noreferrer">
-                    <img src={afority} alt='_image' className='experience__image' />
-                    <p className='experience__description'>{t('experience.description2')}</p>
-                </a>
-            </div>
-            <div className='experience'>
-                <a target='_blank' href={'https://www.skylabcoders.com/es'} className='experience__header' rel="noreferrer">
-                    <img src={skylab} alt='_image' className='experience__image' style={{ width: '100px' }} />
-                    <p className='experience__title'>{t('experience.title3')}</p>
-                </a>
-                <a target='_blank' href={'https://github.com/luislourencos/books'} className='experience__body' rel="noreferrer">
-                    <img src={books} alt='_image' className='experience__image' style={{ width: '40px' }} />
-                    <p className='experience__description'>{t('experience.description3')}</p>
-                </a>
+            <div className="experience__main">
+                <div className="container">
+                    <div className="exp1">
+                        <CardExperience
+                            title={t('experience.title1')}
+                            post={t('experience.post1')}
+                            duration={t('experience.duration1')}
+                            description={t('experience.description1')}
+                            fade="left"
+                        />
+                    </div>
+                    <div className="exp2">
+                        <CardExperience
+                            title={t('experience.title2')}
+                            post={t('experience.post2')}
+                            duration={t('experience.duration2')}
+                            description={t('experience.description2')}
+                            fade="right"
+                        />
+                    </div>
+                    <div className="exp3">
+                        <CardExperience
+                            title={t('experience.title3')}
+                            post={t('experience.post3')}
+                            duration={t('experience.duration3')}
+                            description={t('experience.description3')}
+                            fade="left"
+                        />
+                    </div>
+                    <div className="exp4">
+                        <CardExperience
+                            title={t('experience.title4')}
+                            post={t('experience.post4')}
+                            duration={t('experience.duration4')}
+                            description={t('experience.description4')}
+                            fade="right"
+                        />
+                    </div>
+                    <div className="line">
+                        <div className="dot-line"></div>
+                    </div>
+                </div>
             </div>
 
-        </Box>
+            {/* <div className="experience__main">
+
+                <div className='experience__box'>
+                    <div className="experience__type">
+                        <CardExperience
+                            title={t('experience.title1')}
+                            post={t('experience.post1')}
+                            duration={t('experience.duration1')}
+                            description={t('experience.description1')}
+                            fade="left"
+                        />
+                        <div className="experience__line-horizontal"></div>
+                    </div>
+                    <div className="experience__type" />
+
+
+                    <div className="experience__type">
+                        <CardExperience
+                            title={t('experience.title1')}
+                            post={t('experience.post1')}
+                            duration={t('experience.duration1')}
+                            description={t('experience.description1')}
+                            fade="left"
+                        />
+                        <div className="experience__line-horizontal"></div>
+                    </div>
+                </div>
+                <div className="experience__line" >
+                    <div style={{ width: '50px', height: "50px", borderRadius: '50%', backgroundColor: "black", top: "-25px", left: "-22px", position: "absolute" }}></div>
+                </div>
+                <div className='experience__box'>
+                    <div className="experience__type" />
+
+
+                    <div className="experience__type">
+                        <div className="experience__line-horizontal"></div>
+                        <CardExperience
+                            title={t('experience.title1')}
+                            post={t('experience.post1')}
+                            duration={t('experience.duration1')}
+                            description={t('experience.description1')}
+                            fade="right"
+                        />
+
+                    </div>
+                    <div className="experience__type" />
+
+                    <div className="experience__type">
+                        <div className="experience__line-horizontal"></div>
+                        <CardExperience
+                            title={t('experience.title1')}
+                            post={t('experience.post1')}
+                            duration={t('experience.duration1')}
+                            description={t('experience.description1')}
+                            fade="right"
+                        />
+                    </div> */}
+            {/* </div> */}
+            {/* </div> */}
+
+
+        </div>
     );
 };
 

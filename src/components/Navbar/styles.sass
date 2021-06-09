@@ -3,14 +3,12 @@
     position: fixed
     top: 0
     width: 100%
-    height: 60px
-    color: $color-secondary
-    background-color: $color-primary
+    height: 50px
+    padding: 10px 0px
+    background-color: #272B35
     font-weight: bold
     z-index: 99999
     @include flex-center(_,space-between,center)
-    -webkit-box-shadow: 0px 15px 23px -9px $color-terteary
-    box-shadow: 0px 15px 23px -9px $color-terteary
     &__nav
         @include flex-center(row,flex-end,center)
     &__logo
@@ -21,33 +19,32 @@
         margin: 0px 10px
         @include flex-center(_,center,center)
         &-ul
-            @include flex-center(_,center,center)
-            margin: 0
-            
+            @include flex-center(_,center,center)  
         &-li
             position: relative
             top: 10px
             cursor: pointer
             list-style-type: none
             margin: 10px
-            padding-bottom: 15px 
-            border-bottom: 3px solid $color-primary
+            padding-bottom: 5px 
+            border-bottom: solid 0px white
+            transition: border-width 0.3s linear
+            color: #EBEBEB
             &:hover
-                transition-duration: .300
-                color: $color-secondary-strong
-                border-bottom: 3px solid $color-secondary
+                border-width: 5px
+                color: silver
+                border-color: silver
     &__burguer
         font-size: 25px
         padding: 5px
         margin: 10px
-        border: 1px solid $color-secondary
         border-radius: 5px
+        color: white
         &--press
-            color: $color-secondary-strong
-            border-color: $color-secondary-strong
+            color:#2A80B9
         &:hover
             color: $color-secondary-strong
-            transition-duration: .300s
+            transition-duration: .400s
             border-color: $color-secondary-strong
     &__select
         margin: 0px 5px
@@ -55,8 +52,8 @@
         padding: 5px
         crusor: pointer
         font-size: 20px
-        color: $color-secondary
-        background-color: $color-primary
+        color: white
+        background-color: transparent
         &:focus
             outline: none          
 
@@ -65,20 +62,21 @@
         &-ul
             transition-duration: .500s
             position: absolute
-            top: 60px
+            top: 70px
             right: 0px
             @include flex-center(column,center,flex-start)
         &-row
-            background-color: $color-primary
+            background-color: #272C35
+            color: white
             width: 100%
             padding: 10px 40px
             margin: 0
             cursor: pointer
             list-style-type: none
-            border: 1px solid $color-secondary-strong
+            border: 1px solid white
             @include flex-center(row,space-between,center)
             &:hover
-                color: $color-secondary-strong
+                color: #2A80B9
                 opacity: 0.9
                 transition-duration: .400s
         &-li   
@@ -86,7 +84,7 @@
              
 
     
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 800px) 
     .navbar__list
         display: none
     .navbar__dropdown

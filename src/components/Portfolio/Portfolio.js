@@ -8,42 +8,59 @@ import pasapalabra from '../../img/pasapalabra.jpg';
 import conecta4 from '../../img/conecta4.png';
 import calculator from '../../img/calculator.png';
 import './styles.sass';
+import { CardGame } from './CardGame'
 
 export const Portfolio = ({ divRef }) => {
     const { t } = useTranslation()
-    return (
-        <Box divRef={divRef} image={portfolio} right={true} title={t('navbar.portfolio')}>
 
-            <a href='https://chat-app-luislouro.herokuapp.com/' target='_blank' rel='noreferrer' className='portfolio'>
-                <div className='portfolio__box'>
-                    <img src={chat} alt='_image' className='portfolio__image' style={{ width: '90px' }} />
-                    <p className='portfolio__description'>{t('portfolio.chat')}</p>
+    const works = [
+        {
+            src: chat,
+            title: t('chat.title'),
+            description: t('chat.description'),
+            route: "https://chat-app-luislouro.herokuapp.com/"
+        },
+        {
+            src: pasapalabra,
+            title: t('pasapalabra.title'),
+            description: t('pasapalabra.description'),
+            route: "https://chat-app-luislouro.herokuapp.com/"
+        },
+        {
+            src: conecta4,
+            title: t('conecta4.title'),
+            description: t('conecta4.description'),
+            route: "https://chat-app-luislouro.herokuapp.com/"
+        },
+        {
+            src: calculator,
+            title: t('calculator.title'),
+            description: t('calculator.description'),
+            route: "https://chat-app-luislouro.herokuapp.com/"
+        }
+    ]
+    return (
+        <div divRef={divRef}>
+            <div className="align-left">
+                <div className="typewriter">
+                    <h1 className="experience__title">{t('experience.title')}</h1>
                 </div>
-            </a>
-            <a href='https://github.com/luislourencos/books/tree/master/books-docs' target='_blank' rel='noreferrer' className='portfolio'>
-                <div className='portfolio__box'>
-                    <img src={books} alt='_image' className='portfolio__image' />
-                    <p className='portfolio__description'>{t('portfolio.books')}</p>
-                </div>
-            </a>
-            <a href='https://luislourencos.github.io/pasapalabra/' target='_blank' rel='noreferrer' className='portfolio'>
-                <div className='portfolio__box'>
-                    <img src={pasapalabra} alt='_image' className='portfolio__image' />
-                    <p className='portfolio__description'>{t('portfolio.pasapalabra')}</p>
-                </div>
-            </a>
-            <a href='https://luislourencos.github.io/connecta4/' target='_blank' rel='noreferrer' className='portfolio'>
-                <div className='portfolio__box'>
-                    <img src={conecta4} alt='_image' className='portfolio__image' />
-                    <p className='portfolio__description'>{t('portfolio.conecta4')}</p>
-                </div>
-            </a>
-            <a href='https://luislourencos.github.io/calculator/' target='_blank' rel='noreferrer' className='portfolio'>
-                <div className='portfolio__box'>
-                    <img src={calculator} alt='_image' className='portfolio__image' />
-                    <p className='portfolio__description'>{t('portfolio.calculator')}</p>
-                </div>
-            </a>
-        </Box>
+            </div>
+            <div className="portfolio__container">
+                {works.map((element, index) => {
+                    return (
+                        <CardGame
+                            key={index}
+                            src={element.src}
+                            title={element.title}
+                            description={element.description}
+                            routeButton={element.route}
+                        />
+                    )
+                })}
+
+
+            </div>
+        </div>
     );
 };

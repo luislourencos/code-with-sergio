@@ -1,14 +1,13 @@
 import React, { useRef, useState } from 'react';
 import { Navbar } from '../components/Navbar'
 import { Contact } from '../components/Contact'
-import { Profile } from '../components/Profile';
 
 import { Skills } from '../components/Skills';
 import { Experience } from '../components/Experience';
 import { Portfolio } from '../components/Portfolio';
 import { Header } from '../components/Header/Header';
-import background from '../img/background-image.png'
-import './styles.sass';
+
+import './styles.css';
 import { useTranslation } from 'react-i18next';
 
 export const App = () => {
@@ -48,12 +47,10 @@ export const App = () => {
   }
 
   return (
-    <div className="app" ref={top}>
+    <div ref={top}>
       <Navbar onClick={handlerNavbar} closeBurguer={closeBurguer} />
-      <div className='app__body' onClick={() => setCloseBurguer(true)}>
-        <Header title={t('header.title')} description={t('header.description')} backgroundImage={background} />
-        <div ref={profile}></div>
-        <Profile />
+      <div className="body" ref={profile}>
+        <Header />
         <div ref={skills}></div>
         <Skills />
         <div ref={experience}></div>
@@ -62,6 +59,7 @@ export const App = () => {
         <Portfolio />
         <i className="fas fa-arrow-alt-circle-up " onClick={() => handlerNavbar('top')}></i>
       </div>
+
       <Contact divRef={contact} />
     </div>
   );
