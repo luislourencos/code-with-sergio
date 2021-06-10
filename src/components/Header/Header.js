@@ -1,11 +1,10 @@
 import React from 'react';
-import { Fade, Flip } from 'react-reveal'
 import sergio from '../../img/profile.png';
 import { Button } from '../Button'
 import './styles.css';
 import { useTranslation } from 'react-i18next';
-import pdf_es from '../../img/curriculum_sergio_luis_es.pdf'
-import pdf_en from '../../img/curriculum_sergio_luis_en.pdf'
+import pdf_es from '../../img/sergio_luis_curriculum_es.pdf'
+import pdf_en from '../../img/sergio_luis_curriculum_en.pdf'
 
 export const Header = () => {
     const { t } = useTranslation()

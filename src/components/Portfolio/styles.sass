@@ -5,13 +5,13 @@
         flex-wrap: wrap
         justify-content: center
         align-items: center
+        overflow: hidden
         background-color: $color-black
         padding: 50px 20px
 
 .card__game
     width: 250px
     height: 350px
-    border: 2px solid red 
     background-color: white  
     margin: 25px
     border-radius: 3px 
@@ -26,6 +26,7 @@
         background-color: $color-blue
         @include flex-center(column, space-around,center) 
     &-title
+        margin: 0px 3px
         text-align: center
         color: white
         font-weight: bold

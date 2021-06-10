@@ -11,26 +11,44 @@
         "description":"Full-Stack"
     },
     "profile":{
-        "description1":"Pro-active and self-taught, passionate about programming." ,
-        "description2":"Strong team player and self motivated professional with remote experience." ,  
-        "description3":"I love a job well done and the good practices" ,  
+        "description1":"Strong team player and self motivated professional." ,
+        "description2":"Pro-active and self-taught." ,  
+        "description3":"Love for well done job and best practices." ,  
         "description4":"Ability to work under pressure and multitask." ,  
-        "description5":"I like challenges and learning new skills."    
+        "description5":"Challenging and curious to learn new skills all the time."    
     },
     "experience":{
-        "title1":"Full-Stack developer - Freelancer,Barcelona - 2021",
-        "description1":"Proyecto Full-stack - Web app developed with webSocket. Implemented with NodeJS, express, mongoose, TDD, ReactJS, sass, i18next, redux, react-router-dom.",
-        "title2":"Web/Mobile developer - OptimalWay, Barcelona - 06/2020-01/2020",
-        "description2":"Web and mobile App project for capacity control of sports facilities. Implemented with Agile, React-Native-web y React-Native, typescript, i18next, redux, react-navigation.",
-        "title3":"Web developer - SkylabCoders, Barcelona - 2020",
-        "description3":"Full-stack project - Mobile App for book sharing. Implemented with NodeJS, express, mongoose, TDD y React-native."
+        "title": "Work Experience",
+        "title1":"Feel Online AG",
+        "post1":"Full-Stack developer",
+        "duration1":"FEV. 2021 - JUN 2021",
+        "description1":"Creating a website from scratch, for yoga online classes, using a streaming provider. Created with, ReactJs, Redux, Router, styled components, Axios, mySQL, Express, NodeJs, TDD, Swagger and integration with stream provider.",
+        "title2":"Optimalway Consulting",
+        "post2":"Front-End developer",
+        "duration2":"JUL. 2020 - ENE 2021",
+        "description2":"Development of mobile and backoffice app, to control capacity on sports facilities. Participation and contribution in the development of severals projects in the company associated with the basketball federation. Using technologies like ReactJs, React Native, React Native Web, TypeScript and Agile methodologies.",
+        "title3":"Skylab Coders",
+        "post3":"Full-Stack developer",
+        "duration3":"ABR. 2020 - JUN 2020",
+        "description3":"Coding for more than 930h in less than 3 months. Team-work front-end project in 2 weeks. Individual Full-Stack project using React, MongoDb, Express, API Rest, TDD, NodeJs, Git, Trello, etc."
+       
     },
-    "portfolio":{
-        "chat":"Full-stack project implemented with ReactJs using websockets",
-        "books":"Full-stack project implemented with React-Native",
-        "pasapalabra":"The Alphabet Quiz Game",
-        "conecta4":"Game connect four",
-        "calculator":"Simple calculator."
+ 
+    "chat":{
+        "title":"Full-stack project implemented with ReactJs using websockets."
+    },
+    "pasapalabra":{
+        "title":"The Alphabet Quiz Game"
+    },
+    "conecta4":{
+        "title":"Game connect four."
+    },
+    "calculator":{
+        "title":"Simple calculator."
+    },
+    "card":{
+
+        "play":"Play"
     },
     "download":{
         "curriculum":"Download my Curriculum Vitae"
@@ -51,8 +69,19 @@
         "study1":"Skylab Coders Academy - Full Stack Developer - 2020",
         "study2":"ITAcademy cibernarium - Front End Developer -2020",
         "study3":"University of Coimbra - Mechanical Engineer - 2010",
-        "study4":"UPC - Industrial Engineer - 2008"
-    }
+        "study4":"UPC - Industrial Engineer - 2008",
+        "education":"Education",
+        "languageTitle":"Languages",
+        "languagePor":"Portuguese",
+        "languageEs":"Spanish",
+        "languageIn":"English",
+        "languageCat":"Catalan",
+        "backEnd":"Back-End",
+        "backFront":"Front-End"
+    },
+    "portofolio":{
+        "title": "Personal projects"
+      }
   
 
 }

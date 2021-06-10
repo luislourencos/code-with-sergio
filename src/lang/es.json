@@ -11,27 +11,44 @@
         "description":"Full-Stack"
     },
     "profile":{
-        "description1":"Pro-Activo y autodidacta apasionado por la programación." ,
-        "description2":"Me gusta trabajar en equipo y con experiencia en remoto." ,  
-        "description3":"Me encanta el trabajo bien hecho y las buenas práticas." ,  
+        "description1":"Me gusta trabajar en equipo y con experiencia en remoto." ,
+        "description2":"Pro-Activo y autodidacta." ,  
+        "description3":"Buscando siempre resultados, sin perder de vista las buenas prácticas." ,  
         "description4":"Habilidade para trabajar bajo presión." ,  
-        "description5":"Motivado por nuevos retos y nuevas tecnologías." 
+        "description5":"Desafiando me para aprender nuevas aptitudes y nuevas tecnologías." 
     },
     "experience":{
-        "title1":"Full-Stack developer - Freelancer,Barcelona - 2021",
-        "description1":"Proyecto Full-stack - Web app creado con webSocket. Implementado con NodeJS, express, mongoose, TDD, ReactJS, sass, i18next, redux, react-router-dom.",
-        "title2":"Web/Mobile developer - OptimalWay, Barcelona - 06/2020-01/2020",
-        "description2":"Web y App para el control de aforos de instalaciones. Implementado con Agile, React-Native-web y React-Native, typescript, i18next, redux, react-navigation.",
-        "title3":"Web developer - SkylabCoders, Barcelona - 2020",
-        "description3":"Proyecto Full-stack - App mobil para compartir libros. Implementado con NodeJS, express, mongoose, TDD y React-native."
+        "title": "Experiencia Laboral",
+        "title1":"Feel Online AG",
+        "post1":"Full-Stack developer",
+        "duration1":"FEV. 2021 - JUN 2021",
+        "description1":"Desarrollo de una plataforma web de clases online en stream. Usando tecnologías como ReactJs, Redux, Router, styled components, Axios, NodeJS, MySQL, Swagger, TDD  y integración con proveedores de Stream.",
+        "title2":"Optimalway Consulting",
+        "post2":"Desarrollador Front-End",
+        "duration2":"JUL. 2020 - ENE 2021",
+        "description2":"Desarrollo de una aplicación mobil y del back-office para el control de aforos de instalaciones deportivas. Participación y contribución en el desarrollo de diversos proyectos en la empresa asociados a la federación de basquet. Usando tecnologías como ReactJs, React Native, React Native Web, TypeScript y metodologías Agile.",
+        "title3":"Skylab Coders",
+        "post3":"Full-Stack developer",
+        "duration3":"ABR. 2020 - JUN 2020",
+        "description3":"Programando mas de 930 horas,  en menos de 3 meses. Proyecto front-end después de 2 semanas de trabajo. Proyecto individual usando, React-Native, MongoDb, Express, NodeJS, API Rest, TDD, Git, Trello, etc."
+       
     },
-    "portfolio":{
-        "chat":"Proyecto Full-stack implementado con ReactJs utilizando los sockets",
-        "books":"Proyecto Full-stack implementado con React-Native",
-        "pasapalabra":"Juego de pasapalabra.",
-        "conecta4":"Juego de conecta4.",
-        "calculator":"Calculadora simples."
-    },
+        "chat":{
+            "title":"Proyecto Full-stack implementado con ReactJs utilizando los sockets"
+        },
+        "pasapalabra":{
+            "title":"Juego de pasapalabra"
+        },
+        "conecta4":{
+            "title":"Juego de conecta4."
+        },
+        "calculator":{
+            "title":"Calculadora simples."
+        },
+        "card":{
+
+            "play":"Jugar"
+        },
     "download":{
         "curriculum":"Descarga mi Curriculum Vitae"
     },
@@ -51,7 +68,18 @@
         "study1":"Skylab Coders Academy - Full Stack Developer - 2020",
         "study2":"ITAcademy cibernarium - Front End Developer -2020",
         "study3":"Universidad de Coimbra - Ingeniería Mecánica - 2010",
-        "study4":"UPC - Ingeniería Industrial - 2008"
+        "study4":"UPC - Ingeniería Industrial - 2008",
+        "education":"Educacion",
+        "languageTitle":"Idiomas",
+        "languagePor":"Portugués",
+        "languageEs":"Español",
+        "languageIn":"Inglés",
+        "languageCat":"Catalan",
+        "backEnd":"Back-End",
+        "backFront":"Front-End"
+    },
+    "portofolio":{
+      "title": "Proyectos personales"
     }
 
 

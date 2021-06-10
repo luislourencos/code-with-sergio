@@ -51,80 +51,13 @@ export const Experience = ({ divRef }) => {
                             fade="left"
                         />
                     </div>
-                    <div className="exp4">
-                        <CardExperience
-                            title={t('experience.title4')}
-                            post={t('experience.post4')}
-                            duration={t('experience.duration4')}
-                            description={t('experience.description4')}
-                            fade="right"
-                        />
-                    </div>
                     <div className="line">
                         <div className="dot-line"></div>
                     </div>
                 </div>
             </div>
 
-            {/* <div className="experience__main">
 
-                <div className='experience__box'>
-                    <div className="experience__type">
-                        <CardExperience
-                            title={t('experience.title1')}
-                            post={t('experience.post1')}
-                            duration={t('experience.duration1')}
-                            description={t('experience.description1')}
-                            fade="left"
-                        />
-                        <div className="experience__line-horizontal"></div>
-                    </div>
-                    <div className="experience__type" />
-
-
-                    <div className="experience__type">
-                        <CardExperience
-                            title={t('experience.title1')}
-                            post={t('experience.post1')}
-                            duration={t('experience.duration1')}
-                            description={t('experience.description1')}
-                            fade="left"
-                        />
-                        <div className="experience__line-horizontal"></div>
-                    </div>
-                </div>
-                <div className="experience__line" >
-                    <div style={{ width: '50px', height: "50px", borderRadius: '50%', backgroundColor: "black", top: "-25px", left: "-22px", position: "absolute" }}></div>
-                </div>
-                <div className='experience__box'>
-                    <div className="experience__type" />
-
-
-                    <div className="experience__type">
-                        <div className="experience__line-horizontal"></div>
-                        <CardExperience
-                            title={t('experience.title1')}
-                            post={t('experience.post1')}
-                            duration={t('experience.duration1')}
-                            description={t('experience.description1')}
-                            fade="right"
-                        />
-
-                    </div>
-                    <div className="experience__type" />
-
-                    <div className="experience__type">
-                        <div className="experience__line-horizontal"></div>
-                        <CardExperience
-                            title={t('experience.title1')}
-                            post={t('experience.post1')}
-                            duration={t('experience.duration1')}
-                            description={t('experience.description1')}
-                            fade="right"
-                        />
-                    </div> */}
-            {/* </div> */}
-            {/* </div> */}
 
 
         </div>

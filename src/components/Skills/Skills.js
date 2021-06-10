@@ -1,32 +1,28 @@
 import React from 'react';
-import { Box } from '../Box'
-import front from '../../img/front.png'
-import back from '../../img/back.png'
-import skills from '../../img/skills.png'
-import nodejs from '../../img/nodejs.png'
-import expressjs from '../../img/expressjs.png'
-import swagger from '../../img/swagger.png'
-import mongodb from '../../img/mongodb.png'
-import mochachai from '../../img/mocha_chai.png'
-import graphql from '../../img/graphql.png'
-import apollo from '../../img/apollo.png'
-import html from '../../img/html-5.png'
-import js from '../../img/js.png'
-import css from '../../img/css.png'
-import sass from '../../img/sass.png'
-import storybook from '../../img/storybook.png'
-import jest from '../../img/jest.png'
-import react from '../../img/react.png'
-import reactnative from '../../img/react-native.png'
-import typescript from '../../img/typescript.png'
-import redux from '../../img/redux.png'
-import router from '../../img/react-router.png'
-import mysql from '../../img/mysql.png'
-import { Card } from './Card'
-import './styles.sass';
-import './styles.css';
 import { useTranslation } from 'react-i18next';
 import Fade from 'react-reveal/Fade';
+import apollo from '../../img/apollo.png';
+import css from '../../img/css.png';
+import expressjs from '../../img/expressjs.png';
+import graphql from '../../img/graphql.png';
+import html from '../../img/html-5.png';
+import js from '../../img/js.png';
+import mochachai from '../../img/mocha_chai.png';
+import mongodb from '../../img/mongodb.png';
+import mysql from '../../img/mysql.png';
+import nodejs from '../../img/nodejs.png';
+import reactnative from '../../img/react-native.png';
+import router from '../../img/react-router.png';
+import react from '../../img/react.png';
+import redux from '../../img/redux.png';
+import sass from '../../img/sass.png';
+import storybook from '../../img/storybook.png';
+import styledComponents from '../../img/styled.comp.png';
+import swagger from '../../img/swagger.png';
+import typescript from '../../img/typescript.png';
+import { Card } from './Card';
+import './styles.css';
+import './styles.sass';
 
 export const Skills = ({ divRef }) => {
     const { t } = useTranslation()
@@ -118,6 +114,16 @@ export const Skills = ({ divRef }) => {
         {
             src: router,
             title: "React Router",
+            description: "desciption"
+        },
+        {
+            src: storybook,
+            title: "Story book",
+            description: "desciption"
+        },
+        {
+            src: styledComponents,
+            title: "styled components",
             description: "desciption"
         },
     ]
