@@ -670,6 +670,10 @@
     align-items: center;
     flex-direction: column;
   }
+
+  .dot-line {
+    display: none;
+  }
 }
 .align-left {
   width: 100%;
