@@ -31,13 +31,15 @@
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.2fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "exp1 exp1 exp1 exp1 exp1 line . . . . . "
       ". . . . . line exp2 exp2 exp2 exp2 exp2"
       "exp3 exp3 exp3 exp3 exp3 line . . . . ."
+      ". . . . . line exp4 exp4 exp4 exp4 exp4 "
+      "exp5 exp5 exp5 exp5 exp5 line . . . . . "
   }
   
   .exp1 { grid-area: exp1; }
@@ -47,6 +49,8 @@
   .exp3 { grid-area: exp3; }
   
   .exp4 { grid-area: exp4; }
+
+  .exp5 { grid-area: exp5; }
   
   .line { 
     display: flex;
@@ -73,6 +77,8 @@
       ". exp1 exp1 exp1 exp1 exp1 exp1 exp1 exp1 exp1"
       ". exp2 exp2 exp2 exp2 exp2 exp2 exp2 exp2 exp2"
       ". exp3 exp3 exp3 exp3 exp3 exp3 exp3 exp3 exp3"
+      ". exp4 exp4 exp4 exp4 exp4 exp4 exp4 exp4 exp4"
+      ". exp5 exp5 exp5 exp5 exp5 exp5 exp5 exp5 exp5"
       
      }
      .line{

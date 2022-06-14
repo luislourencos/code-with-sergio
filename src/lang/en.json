@@ -19,18 +19,31 @@
     },
     "experience":{
         "title": "Work Experience",
-        "title1":"Feel Online AG",
-        "post1":"Full-Stack developer",
-        "duration1":"FEV. 2021 - JUN 2021",
-        "description1":"Creating a website from scratch, for yoga online classes, using a streaming provider. Created with, ReactJs, Redux, Router, styled components, Axios, mySQL, Express, NodeJs, TDD, Swagger and integration with stream provider.",
-        "title2":"Optimalway Consulting",
-        "post2":"Front-End developer",
-        "duration2":"JUL. 2020 - ENE 2021",
-        "description2":"Development of mobile and backoffice app, to control capacity on sports facilities. Participation and contribution in the development of severals projects in the company associated with the basketball federation. Using technologies like ReactJs, React Native, React Native Web, TypeScript and Agile methodologies.",
-        "title3":"Skylab Coders",
+        
+        "title5":"Skylab Coders",
+        "post5":"Full-Stack developer",
+        "duration5":"APR. 2020 - JUN 2020",
+        "description5":"Coding for more than 930h in less than 3 months. Team-work front-end project in 2 weeks. Individual Full-Stack project using React, MongoDb, Express, API Rest, TDD, NodeJs, Git, Trello, etc.",
+       
+        "title4":"Optimalway Consulting",
+        "post4":"Front-End developer",
+        "duration4":"JUL. 2020 - ENE 2021",
+        "description4":"Development of mobile and backoffice app, to control capacity on sports facilities. Participation and contribution in the development of severals projects in the company associated with the basketball federation. Using technologies like ReactJs, React Native, React Native Web, TypeScript and Agile methodologies.",
+        
+        "title3":"Feel Online AG",
         "post3":"Full-Stack developer",
-        "duration3":"ABR. 2020 - JUN 2020",
-        "description3":"Coding for more than 930h in less than 3 months. Team-work front-end project in 2 weeks. Individual Full-Stack project using React, MongoDb, Express, API Rest, TDD, NodeJs, Git, Trello, etc."
+        "duration3":"FEB. 2021 - JUN 2021",
+        "description3":"Creating a website from scratch, for yoga online classes, using a streaming provider. Created with, ReactJs, Redux, Router, styled components, Axios, mySQL, Express, NodeJs, TDD, Swagger and integration with stream provider.",
+        
+        "title2":"Plexus Tech",
+        "post2":"Front-End developer",
+        "duration2":"JUN. 2021 - FEB 2022",
+        "description2":"Development of mobiles apps with React-Native y Flutter, using Typescript, Redux, TDD and and Agile/Scrum methodologies.",
+       
+        "title1":"Gocleer",
+        "post1":"Front-End developer",
+        "duration1":"FEB. 2022 - JUN 2022",
+        "description1":"Development web and mobiles apps with ReactJs and React-Native, using Typescript, Redux, Material-Ui, TDD (with cypress) and Scrum methodologies"
        
     },
  

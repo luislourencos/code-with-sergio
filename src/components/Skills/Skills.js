@@ -20,6 +20,9 @@ import storybook from '../../img/storybook.png';
 import styledComponents from '../../img/styled.comp.png';
 import swagger from '../../img/swagger.png';
 import typescript from '../../img/typescript.png';
+import jest from '../../img/jest.png';
+import cypress from '../../img/cypress.png';
+
 import { Card } from './Card';
 import './styles.css';
 import './styles.sass';
@@ -114,6 +117,16 @@ export const Skills = ({ divRef }) => {
         {
             src: router,
             title: "React Router",
+            description: "desciption"
+        },
+        {
+            src: jest,
+            title: "Jest",
+            description: "desciption"
+        },
+        {
+            src: cypress,
+            title: "Cypress",
             description: "desciption"
         },
         {

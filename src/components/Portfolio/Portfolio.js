@@ -10,6 +10,9 @@ import calculator from '../../img/calculator.png';
 import './styles.sass';
 import { CardGame } from './CardGame'
 
+
+
+
 export const Portfolio = ({ divRef }) => {
     const { t } = useTranslation()
 
@@ -41,6 +44,7 @@ export const Portfolio = ({ divRef }) => {
     ]
     return (
         <div divRef={divRef} style={{ width: '100%' }}>
+
             <div className="align-left">
                 <div className="typewriter">
                     <h1 className="experience__title">{t('portofolio.title')}</h1>

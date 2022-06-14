@@ -24,6 +24,8 @@ export const Experience = ({ divRef }) => {
             </div>
             <div className="experience__main">
                 <div className="container">
+
+
                     <div className="exp1">
                         <CardExperience
                             title={t('experience.title1')}
@@ -48,6 +50,24 @@ export const Experience = ({ divRef }) => {
                             post={t('experience.post3')}
                             duration={t('experience.duration3')}
                             description={t('experience.description3')}
+                            fade="left"
+                        />
+                    </div>
+                    <div className="exp4">
+                        <CardExperience
+                            title={t('experience.title4')}
+                            post={t('experience.post4')}
+                            duration={t('experience.duration4')}
+                            description={t('experience.description4')}
+                            fade="right"
+                        />
+                    </div>
+                    <div className="exp5">
+                        <CardExperience
+                            title={t('experience.title5')}
+                            post={t('experience.post5')}
+                            duration={t('experience.duration5')}
+                            description={t('experience.description5')}
                             fade="left"
                         />
                     </div>
