@@ -1,12 +1,6 @@
 import React from 'react';
-import { Box } from '../Box';
-import experience from '../../img/experience.png'
-import logo from '../../img/logo.png'
-import chat from '../../img/chat_logo.png'
-import skylab from '../../img/skylab.png'
-import books from '../../img/books.png'
-import optimalway from '../../img/optimalway.png'
-import afority from '../../img/afority.png'
+
+
 
 import './styles.sass';
 import './styles.css';

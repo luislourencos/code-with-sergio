@@ -21,27 +21,27 @@
         "title": "Experiencia Laboral",
         "title3":"Feel Online AG",
         "post3":"Full-Stack developer",
-        "duration3":"FEV. 2021 - JUN 2021",
+        "duration3":"FEB 2021 - JUN 2021",
         "description3":"Desarrollo de una plataforma web de clases online en stream. Usando tecnologías como ReactJs, Redux, Router, styled components, Axios, NodeJS, MySQL, Swagger, TDD  y integración con proveedores de Stream.",
     
         "title4":"Optimalway Consulting",
         "post4":"Desarrollador Front-End",
-        "duration4":"JUL. 2020 - ENE 2021",
+        "duration4":"JU. 2020 - ENE 2021",
         "description4":"Desarrollo de una aplicación mobil y del back-office para el control de aforos de instalaciones deportivas. Participación y contribución en el desarrollo de diversos proyectos en la empresa asociados a la federación de basquet. Usando tecnologías como ReactJs, React Native, React Native Web, TypeScript y metodologías Agile.",
         
         "title5":"Skylab Coders",
         "post5":"Full-Stack developer",
-        "duration5":"ABR. 2020 - JUN 2020",
+        "duration5":"ABR 2020 - JUN 2020",
         "description5":"Programando mas de 930 horas,  en menos de 3 meses. Proyecto front-end después de 2 semanas de trabajo. Proyecto individual usando, React-Native, MongoDb, Express, NodeJS, API Rest, TDD, Git, Trello, etc.",
        
         "title2":"Plexus Tech",
         "post2":"Desarrollador Front-End",
-        "duration2":"JUN. 2021 - FEB 2022",
+        "duration2":"JUN 2021 - FEB 2022",
         "description2":"Desarrollo de aplicaciones mobiles en React-Native y Flutter, utilizando Typescript, Redux y TDD associado con metodologias Agile/Scrum.",
        
         "title1":"Gocleer",
         "post1":"Desarrollador Front-End",
-        "duration1":"FEB. 2022 - JUN 2022",
+        "duration1":"FEB 2022 - JUN 2022",
         "description1":"Desarrollo de la plataforma web en ReactJs y aplicación mobil en React-Native, utilizando Typescript, Redux, Material-Ui y TDD (con cypress) associado con metodologias Scrum."
        
     },

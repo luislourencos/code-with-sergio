@@ -20,7 +20,8 @@ export const Navbar = ({ items = [
 
     const handleScroll = useCallback(() => {
         const currentScrollPos = window.pageYOffset;
-        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+        console.log((prevScrollPos - currentScrollPos))
+        setVisible((prevScrollPos - currentScrollPos) > 0);
         setPrevScrollPos(currentScrollPos);
     }, [prevScrollPos])
 
@@ -36,7 +37,7 @@ export const Navbar = ({ items = [
 
 
     return (
-        <nav className='navbar' style={{ top: visible ? '0' : '-75px' }}>
+        <nav className={`navbar ${!visible ? 'style__drop' : ''}`} >
             <img src={logo} className='navbar__logo' alt='logo' />
             <div className='navbar__nav'>
                 <select className='navbar__select' defaultValue={localStorage.getItem('language') || 'es'} onChange={(e) => {

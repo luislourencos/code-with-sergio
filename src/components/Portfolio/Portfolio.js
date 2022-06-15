@@ -1,9 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Box } from '../Box';
-import portfolio from '../../img/portfolio.png'
 import chat from '../../img/chat_logo.png';
-import books from '../../img/books.png';
 import pasapalabra from '../../img/pasapalabra.jpg';
 import conecta4 from '../../img/conecta4.png';
 import calculator from '../../img/calculator.png';

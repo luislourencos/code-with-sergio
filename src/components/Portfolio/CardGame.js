@@ -8,11 +8,11 @@ export const CardGame = ({ src, title = "title", description = "description", ro
         <div className="card__game">
 
             <div className="card__game-image" >
-                <img src={src} className="card__game-image-item" />
+                <img src={src} className="card__game-image-item" alt={`${title}`} />
             </div>
             <div className="card__game-text">
                 <p className="card__game-title">{title}</p>
-                {/* <p className="card__game-description">{description}</p> */}
+
 
                 <div style={{ minWidth: "150px" }}>
                     <Button href={routeButton} target='_blank' rel='noreferrer'>{t("card.play")}</Button>

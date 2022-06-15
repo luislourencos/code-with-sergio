@@ -37,7 +37,7 @@
 
   .flip-card {
     background-color: transparent;
-    width: 100%;
+    width: 50vw;
     height: 600px;
     perspective: 1500px;
   }
@@ -81,20 +81,17 @@
     transform: rotateY(180deg);
   }
 
-.header{
-
-
-}
 .header__header{
-    width: 100%;
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
 .header__presentation{
-    margin: 0px 0px 0px 50px;
-    width: 100%;
+    padding: 0px 0px 0px 50px;
+    
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -140,8 +137,12 @@ text-align: left;
   .header__header{
     flex-direction: column
   }
+  .flip-card{
+    width:100vw
+  }
   .header__presentation{
-    margin: 0px 0px 0px 20px;
+    width: 100vw;
+    padding: 0px 0px 0px 50px;
   }
   .header__title{
     font-size: 2em;

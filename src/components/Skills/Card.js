@@ -4,7 +4,7 @@ export const Card = ({ src, title, description, width }) => {
     return (
         <div className="card__item">
             <div className="card__item-container" >
-                <img src={src} className="card__item-img" style={{ width }} />
+                <img src={src} className="card__item-img" style={{ width }} alt={`${title}`} />
             </div>
             <div className="card__item-text">
 

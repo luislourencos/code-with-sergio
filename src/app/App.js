@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { Navbar } from '../components/Navbar'
 import { Contact } from '../components/Contact'
 
@@ -8,11 +8,11 @@ import { Portfolio } from '../components/Portfolio';
 import { Header } from '../components/Header/Header';
 
 import './styles.css';
-import { useTranslation } from 'react-i18next';
+
 
 export const App = () => {
-  const { t } = useTranslation()
-  const [closeBurguer, setCloseBurguer] = useState(false)
+
+  const closeBurguer = false
   const top = useRef(null)
   const profile = useRef(null)
   const skills = useRef(null)
