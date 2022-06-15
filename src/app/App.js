@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Navbar } from '../components/Navbar'
 import { Contact } from '../components/Contact'
 
@@ -20,6 +20,12 @@ export const App = () => {
   const portofolio = useRef(null)
   const contact = useRef(null)
 
+  useEffect(() => {
+    const lang = localStorage.getItem('language');
+    if (!lang) {
+      localStorage.setItem('language', 'es')
+    }
+  }, [])
 
   const handlerNavbar = (value) => {
     switch (value) {

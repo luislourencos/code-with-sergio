@@ -50,7 +50,7 @@ export const Header = () => {
 
 
             <div className="header__bottom">
-                <Button href={localStorage.getItem('language') === 'es' ? pdf_es : pdf_en} download='curriculum_sergio_luis.pdf'>{t('download.curriculum')}</Button>
+                <Button href={localStorage.getItem('language') === 'es' ? pdf_es : pdf_en} download={`sergio_luis_curriculum_${localStorage.getItem('language') || 'en'}.pdf`}>{t('download.curriculum')}</Button>
             </div>
 
 
