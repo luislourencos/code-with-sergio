@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/code-with-sergio/static/css/main.e72109d5.chunk.css",
-    "main.js": "/code-with-sergio/static/js/main.8040c429.chunk.js",
-    "main.js.map": "/code-with-sergio/static/js/main.8040c429.chunk.js.map",
+    "main.js": "/code-with-sergio/static/js/main.72495e3d.chunk.js",
+    "main.js.map": "/code-with-sergio/static/js/main.72495e3d.chunk.js.map",
     "runtime-main.js": "/code-with-sergio/static/js/runtime-main.8bafbd47.js",
     "runtime-main.js.map": "/code-with-sergio/static/js/runtime-main.8bafbd47.js.map",
     "static/js/2.c362ff76.chunk.js": "/code-with-sergio/static/js/2.c362ff76.chunk.js",
@@ -29,8 +29,8 @@
     "static/media/react.a544fd8c.png": "/code-with-sergio/static/media/react.a544fd8c.png",
     "static/media/redux.b3b939c6.png": "/code-with-sergio/static/media/redux.b3b939c6.png",
     "static/media/sass.1d3de193.png": "/code-with-sergio/static/media/sass.1d3de193.png",
-    "static/media/sergio_luis_curriculum_en.626a9472.pdf": "/code-with-sergio/static/media/sergio_luis_curriculum_en.626a9472.pdf",
-    "static/media/sergio_luis_curriculum_es.7359d2f9.pdf": "/code-with-sergio/static/media/sergio_luis_curriculum_es.7359d2f9.pdf",
+    "static/media/sergio_luis_curriculum_en.de801a66.pdf": "/code-with-sergio/static/media/sergio_luis_curriculum_en.de801a66.pdf",
+    "static/media/sergio_luis_curriculum_es.0cd524f8.pdf": "/code-with-sergio/static/media/sergio_luis_curriculum_es.0cd524f8.pdf",
     "static/media/storybook.412ae72b.png": "/code-with-sergio/static/media/storybook.412ae72b.png",
     "static/media/styled.comp.76b9df72.png": "/code-with-sergio/static/media/styled.comp.76b9df72.png",
     "static/media/swagger.afd1bfb8.png": "/code-with-sergio/static/media/swagger.afd1bfb8.png",
@@ -40,6 +40,6 @@
     "static/js/runtime-main.8bafbd47.js",
     "static/js/2.c362ff76.chunk.js",
     "static/css/main.e72109d5.chunk.css",
-    "static/js/main.8040c429.chunk.js"
+    "static/js/main.72495e3d.chunk.js"
   ]
 }
