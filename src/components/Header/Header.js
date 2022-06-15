@@ -5,16 +5,39 @@ import './styles.css';
 import { useTranslation } from 'react-i18next';
 import pdf_es from '../../img/sergio_luis_curriculum_es.pdf'
 import pdf_en from '../../img/sergio_luis_curriculum_en.pdf'
+import Lottie from 'react-lottie';
 
+import loader from '../../lotties/hello.json';
 export const Header = () => {
     const { t } = useTranslation()
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: loader,
+
+    }
     return (
         <header className='header'>
             <div className='header__header'>
                 <div className="header__presentation">
+                    <div style={{
+                        position: 'relative',
+                        height: 80
+                    }}>
+
+                        <Lottie
+                            style={{ position: 'absolute' }}
+                            options={defaultOptions}
+                            height={80}
+                            width={80}
+                        />
+                    </div>
+
                     <div className="typewriter">
                         <h1 className="header__title">{t('header.title')}</h1>
                     </div>
+
+
                     <div className="typewriter">
                         <p className="header__description">{t('header.description')}</p>
                     </div>

@@ -1,12 +1,13 @@
 .typewriter .header__title {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid black; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    white-space: nowrap;
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
       typing 2.5s steps(30, end),
       blink-caret 2.75s step-end infinite;
+
   }
 .typewriter .header__description {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -90,22 +91,32 @@
 }
 .header__presentation{
     padding: 0px 0px 0px 50px;
-    
     width: 50vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     min-height: 300px;
+    position:relative;
 }
 .header__title{
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     color: #2980b9
 }
 .header__description{
     font-size: 1.2em;
     color: #2980b9
+}
+.lottie__container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lottie__item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:100%;
 }
 .header__bottom{
     width:100%;
@@ -145,7 +156,7 @@ text-align: left;
     padding: 0px 0px 0px 50px;
   }
   .header__title{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .header__description{
     font-size: 1em;
